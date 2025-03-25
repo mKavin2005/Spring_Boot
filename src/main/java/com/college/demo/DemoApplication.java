@@ -9,20 +9,17 @@ import java.util.ArrayList;
 
 @Service
 public class UserService {
-	private  List<User> users= new ArrayList<>();
+package com.college.demo;
 
-	public String sayAnto() {
-		return "Hello, anto!";
-	}
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+	@SpringBootApplication
+	public class DemoApplication {
 
-	public String UserCreation(User user) {
-		users.add(user);
-		return "User Created";
-	}
+		public static void main(String[] args) {
+			SpringApplication.run(DemoApplication.class, args);
 
+		}
 
-	public List<User> getAll() {
-		return users;
-	}
-}
+	}}
