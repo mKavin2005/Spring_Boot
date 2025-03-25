@@ -7,6 +7,6 @@ RUN mvn clean package -DskipTests
 # Use OpenJDK 21 to run the application
 FROM openjdk:21-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/anto-0.0.1-SNAPSHOT.jar anto.jar
+COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar demo.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "anto.jar"]
+ENTRYPOINT ["java", "-jar", "demo.jar"]
