@@ -1,9 +1,9 @@
-package com.example.demo.service;
+package com.college.demo;
 
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
-import com.example.demo.entity.User;
+import com.college.demo.entity.User;
 import java.util.List;
 import java.util.ArrayList;
 
